@@ -1,18 +1,37 @@
-# Salesforce DX Project: Next Steps
+# sfPokeDeX
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Pokemon playground for researching, collecting, and battling the iconic creatures leveraging the [PokeAPI](https://www.pokeapi.co/) and Salesforce.
 
-## How Do You Plan to Deploy Your Changes?
+## Vision
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+The plan is to break down the sfPokeDeX project into more focused packages to separate concerns and keep the codebase clean. No TotTs here, please.
 
-## Configure Your Salesforce DX Project
+As I see it so far, these are the base packages I've envisioned, and an overview of the data/functionality it will provide/implement.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- **PokeDex package**
+  - Informational resources relating to Pokemon from the PokeAPI
+  - Pokemon
+    - Species
+    - Types
+    - Abilities
+    - Sprites
+    - (More to implement)
+  - Moves
+  - Items
+  - (More to implement)
+    - Leverage apex callouts and a "StorageManager" class to store API data in custom sObjects and return to user
+      - Need to define data factory
+    - Will serve as backbone for populating the database
+- **Trainer package**
+  - Experience site allowing users to collect and train pokemon leveraging the PokeDex package
+    - Defines Trainer (user) metadata for logging into Experience
+      - Contact?
+    - Defines training/evolution process
+      - Time-based?
+      - Dynamic?
+- **Pok-ommunity package**
+  - Define Trainer interactions
+    - Battles
+    - Trading
+    - (Other ideas?)
+  - Define Restful services to interact with other orgs and trainers
