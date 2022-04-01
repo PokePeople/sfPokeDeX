@@ -1,7 +1,7 @@
 {
-  "orgName": "cookie company",
+  "orgName": "pokePeople",
   "edition": "Developer",
-  "features": ["EnableSetPasswordInApi"],
+  "features": ["EnableSetPasswordInApi", "Communities", "Sites"],
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
