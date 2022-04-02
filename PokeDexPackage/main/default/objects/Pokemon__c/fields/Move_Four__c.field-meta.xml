@@ -6,7 +6,6 @@
     <externalId>false</externalId>
     <label>Move Four</label>
     <referenceTo>Move__c</referenceTo>
-    <relationshipLabel>Pocket Monsters (Move Four)</relationshipLabel>
     <relationshipName>Pocket_Monsters3</relationshipName>
     <required>false</required>
     <trackTrending>false</trackTrending>
