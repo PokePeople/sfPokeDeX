@@ -35,3 +35,11 @@ As I see it so far, these are the base packages I've envisioned, and an overview
     - Trading
     - (Other ideas?)
   - Define Restful services to interact with other orgs and trainers
+
+
+## ERD
+
+**PokeDex Package:** (WIP!)
+<img width="575" alt="PokeDexPackage ERD" style="display: flex; justify-content: center;" src="https://user-images.githubusercontent.com/94094697/161394978-a935d3d1-39f5-40cc-afba-d6243a9e963b.png">
+
+
