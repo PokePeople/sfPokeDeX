@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Move_Four__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Moves are the skills of Pokémon in battle. In battle, a Pokémon uses one move each turn.</description>
+    <externalId>false</externalId>
+    <label>Move Four</label>
+    <referenceTo>Move__c</referenceTo>
+    <relationshipLabel>Pocket Monsters (Move Four)</relationshipLabel>
+    <relationshipName>Pocket_Monsters3</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

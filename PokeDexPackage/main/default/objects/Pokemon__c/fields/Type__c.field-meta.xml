@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Pokemon main type</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <referenceTo>Type__c</referenceTo>
+    <relationshipLabel>Pocket Monsters</relationshipLabel>
+    <relationshipName>Pocket_Monsters</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

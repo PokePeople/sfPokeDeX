@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Move_Two__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Moves are the skills of Pokémon in battle. In battle, a Pokémon uses one move each turn.</description>
+    <externalId>false</externalId>
+    <label>Move Two</label>
+    <referenceTo>Move__c</referenceTo>
+    <relationshipLabel>Pocket Monsters (Move Two)</relationshipLabel>
+    <relationshipName>Pocket_Monsters1</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
