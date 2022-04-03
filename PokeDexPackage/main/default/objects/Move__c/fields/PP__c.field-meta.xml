@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Power_Points__c</fullName>
+    <fullName>PP__c</fullName>
     <description>Power points. The number of times this move can be used.</description>
     <externalId>false</externalId>
-    <label>Power Points</label>
+    <label>PP</label>
     <precision>4</precision>
     <required>false</required>
     <scale>0</scale>
