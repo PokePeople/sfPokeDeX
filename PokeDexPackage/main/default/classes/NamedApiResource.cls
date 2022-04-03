@@ -7,7 +7,7 @@ public class NamedApiResource extends Codable {
         super(jsonString);
     }
     
-    protected override void init(){
+    protected override void init() {
         while (parser.nextToken() != System.JSONToken.END_OBJECT) {
             if (parser.getCurrentToken() == System.JSONToken.FIELD_NAME) {
                 String text = parser.getText();
