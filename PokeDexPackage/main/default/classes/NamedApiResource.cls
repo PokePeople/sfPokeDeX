@@ -1,12 +1,13 @@
-public with sharing class NamedApiResource {
+public class NamedApiResource extends Codable {
+
     public String name {get; set;}
     public String url {get; set;}
 
-    public NamedApiResource(JSONParser parser) {
-        this.init(parser);
+    public NamedApiResource(String jsonString) {
+        super(jsonString);
     }
     
-    private void init(JSONParser parser){
+    protected override void init(){
         while (parser.nextToken() != System.JSONToken.END_OBJECT) {
             if (parser.getCurrentToken() == System.JSONToken.FIELD_NAME) {
                 String text = parser.getText();
@@ -17,13 +18,12 @@ public with sharing class NamedApiResource {
                         url = parser.getText();
                     } else {
                         System.debug(LoggingLevel.WARN, 
-                            this.className + ' consuming unrecognized property: ' + text
+                            'Error: consuming unrecognized property: ' + text
                         );
                         consumeObject(parser);
                     }
                 }
             }
         }	
-
     }
 }
