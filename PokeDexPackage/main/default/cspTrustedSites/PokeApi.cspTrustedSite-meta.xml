@@ -2,7 +2,7 @@
 <CspTrustedSite xmlns="http://soap.sforce.com/2006/04/metadata">
     <context>All</context>
     <description>PokeApi!</description>
-    <endpointUrl>https://www.pokeapi.co</endpointUrl>
+    <endpointUrl>https://pokeapi.co</endpointUrl>
     <isActive>true</isActive>
     <isApplicableToConnectSrc>true</isApplicableToConnectSrc>
     <isApplicableToFontSrc>false</isApplicableToFontSrc>

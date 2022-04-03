@@ -3,5 +3,5 @@
     <description>PokeApi</description>
     <disableProtocolSecurity>false</disableProtocolSecurity>
     <isActive>true</isActive>
-    <url>https://www.pokeapi.co</url>
+    <url>https://pokeapi.co</url>
 </RemoteSiteSetting>
