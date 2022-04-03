@@ -1,4 +1,12 @@
-public with sharing class StorageService {
+/**
+ *  StorageService.cls - Defines and contains behavior that leverages
+ *      PokeService/PokeApi to retreive data and store it in custom
+ *      sObjects defined in this package.
+ * 
+ *  Created by @sean-rw 3/22
+ */
+
+public class StorageService {
     
     final private PokeService POKE_SERVICE = new PokeService();
     private List<Pokemon> pokemonList = new List<Pokemon>();

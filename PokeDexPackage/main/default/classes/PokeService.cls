@@ -1,3 +1,10 @@
+/**
+ *  PokeService.cls - Methods for retrieving data from
+ *      the PokeApi. Methods return Strings of JSON
+ * 
+ *  Created by @sean-rw 3/22
+ */
+
 public class PokeService {
     
     private static Http httpProtocol = new Http();
