@@ -1,5 +1,6 @@
 public class NamedApiResource extends Codable {
 
+    public Integer id {get; set;}
     public String name {get; set;}
     public String url {get; set;}
 
@@ -15,6 +16,9 @@ public class NamedApiResource extends Codable {
                     if (text == 'name') {
                         name = parser.getText();
                     } else if (text == 'url') {
+                        String u = parser.getText().removeEnd('/');
+                        Integer i = u.lastIndexOf('/');
+                        id = Integer.valueOf(u.substring(i));
                         url = parser.getText();
                     } else {
                         System.debug(LoggingLevel.WARN, 

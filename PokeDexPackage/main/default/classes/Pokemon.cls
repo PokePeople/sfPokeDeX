@@ -18,6 +18,7 @@ public class Pokemon extends Codable {
 	public Boolean isDefault {get; set;}
 	public Integer order {get; set;}
 	public Integer weight {get; set;}
+	public NamedApiResource mainType {get; set;}
 
 	// Convenience init
     public Pokemon(String jsonString) {
@@ -50,6 +51,9 @@ public class Pokemon extends Codable {
 						}
 						when 'weight' {
 							this.weight = Integer.valueOf(parser.getText());
+						}
+						when 'types' {
+							this.mainType = new NamedApiResource(parser.getText());
 						}
 						when else {
 							System.debug(LoggingLevel.WARN, 
