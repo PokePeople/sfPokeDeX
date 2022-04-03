@@ -24,12 +24,12 @@ public with sharing class StorageService {
         this.pokemonList = retList;
     }
 
-    private Pokemon__c populateSobject(Pokemon p) {
-        // Create a Pokemon__c record populated from Pokemon api resource
-    }
+    // private Pokemon__c populateSobject(Pokemon p) {
+    //     // Create a Pokemon__c record populated from Pokemon api resource
+    // }
 
-    private void storePokemon() {
-        // Build List<Pokemon__c> and insert
+    // private void storePokemon() {
+    //     // Build List<Pokemon__c> and insert
         
-    }
+    // }
 }
