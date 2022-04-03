@@ -1,10 +1,10 @@
-/**\
- * 
+/**
  *  Codable.cls - Abstract class for api models that deal
  *      with JSON from Api resources
  * 
+ *  Inspired by namesake protocol in Swift lang
+ * 
  *  Created by @sean-rw 4/2/22
- *  
  */
 
 public abstract class Codable {
