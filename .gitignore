@@ -42,3 +42,6 @@ $RECYCLE.BIN/
 # Anonymous Apex
 scripts/
 *.apex
+
+# Pokemon class development
+Pokemon-orig.cls

@@ -1,21 +1,26 @@
-/**\
- * 
+/**
  *  Codable.cls - Abstract class for api models that deal
  *      with JSON from Api resources
  * 
+ *  Inspired by namesake protocol in Swift lang
+ * 
  *  Created by @sean-rw 4/2/22
- *  
  */
 
 public abstract class Codable {
 
     protected System.JSONParser parser;
 
+    public Codable(System.JSONParser parser) {
+        this.parser = parser;
+        this.init();
+    }
+    
     public Codable(String jsonString) {
         this.parser = getParser(jsonString);
         this.init();
     }
-    
+
     protected abstract void init();
 
     // Helper
